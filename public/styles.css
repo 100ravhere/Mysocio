@@ -1,0 +1,195 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+ChatEngine
+{
+    clear:both;
+}
+html,body{
+background-image: url('./bg.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Tahoma', sans-serif;
+}
+.container{
+  height: 100%;
+  align-content: center;
+  }
+.container{
+height: 100%;
+align-content: center;
+}
+h1
+{
+    color:black;
+}
+.card{
+height: 370px;
+margin-top: 100px;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(53, 44, 134, 0.5) ;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color:rgb(163, 159, 159);
+}
+.card-footer a
+{
+    color:rgb(8, 10, 3);
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+
+
+.links a{
+margin-left: 4px;
+}
+.signuplink
+{
+    color:rgb(16, 83, 83);
+}
+
+.r-link{
+	display: var(--rLinkDisplay, inline-flex) !important;
+}
+
+.r-link[href]{
+	color: var(--rLinkColor) !important;
+	text-decoration: var(--rLinkTextDecoration, none) !important;
+}
+
+.text-underlined{
+    /*
+        1. I use pixels units because others units (em, rem, vw, vh, etc) can
+        lead to the mistake of displaying a circumcised line
+    */
+
+    --uiTextUnderlinedLineHeight: var(--textUnderlinedLineHeight, 2px); /* 1 */
+    --uiTextUnderlinedLineGap: var(--textUnderlinedLineGap, .5rem);
+    --uiTextUnderlinedPaddingBottom: calc(var(--uiTextUnderlinedLineHeight) + var(--uiTextUnderlinedLineGap));
+
+    padding-bottom: var(--uiTextUnderlinedPaddingBottom) !important;
+    position: var(--textUnderlinedPosition, relative) !important;
+		z-index: var(--textUnderlinedZindex, 1) !important;
+}
+
+.link{
+	--textUnderlinedLineHeight: 100%;
+	--textUnderlinedLineGap: 0;
+	--textUnderlinedLineColor: #D3E3FC;
+	
+	padding-left: .75rem;
+	padding-right: .75rem;
+}
+
+.link::after{
+	will-change: width;
+	transition: width .1s ease-out;
+	transform: rotate(-2deg);
+	transform-origin: left bottom;
+}
+
+.link:hover{
+	--textUnderlinedLineWidht: 0;
+}
+
+.link:hover::after{
+	transition-duration: .15s;
+}
+.text-underlined::after{
+    content: "";
+    width: var(--textUnderlinedLineWidht, 100%) !important;
+    height: var(--uiTextUnderlinedLineHeight) !important;
+		background-image: var(--textUnderlinedBackgroundImage, linear-gradient(to top, var(--textUnderlinedLineColor, currentColor) 30%, rgba(0, 0, 0, 0) 45%)) !important;
+
+    position: absolute;
+    left: var(--textUnderlinedLineLeft, 0) !important;
+    bottom: var(--textUnderlinedLineBottom, 0) !important;
+		z-index: var(--textUnderlinedLineZindex, -1) !important;
+}
+#homeCard
+{
+        height: 250px;
+        margin-left: auto; 
+    margin-right: 0;
+        width: 20%;
+        float:right
+       
+        
+}
+@media screen and (max-width: 1000px) {
+    #homeCard {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #buttonHome {
+     margin-bottom:0;
+      
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
